@@ -4,6 +4,6 @@ class Appointment < ActiveRecord::Base
 
   def formatted_date
     date = DateTime.new(self.appointment_datetime)
-    date.strftime(%B)
+    date.strftime("%B")
   end
 end
