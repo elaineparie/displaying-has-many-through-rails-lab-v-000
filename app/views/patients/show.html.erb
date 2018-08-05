@@ -1,1 +1,3 @@
-<%=@patient.appointment.appointment_datetime.strftime("%B %d, %Y at %H:%M")%>
+<%@patient.appointments.each do |appt|%>
+<%=appt.appointment_datetime.strftime("%B %d, %Y at %H:%M")%>
+<%end%>
